@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/aboutus.css">
+        <title>About Us</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="aboutus.html"><img src="css/images/PNGimage.png" alt="" height="40" width="150"></a></div>
+                <ul class="links">
+                    <li><a href="Mainpage.html">Home</a></li>
+                    <li><a href="gallery.html"> Movie Gallery</a></li>
+                    <li><a href="purchase.html">Purchase</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li class="active"><a href="aboutus.html">About Us</a></li>
+                </ul>
+                <a href="signin.html" class="actionbutton">Login</a>
+                <div class="toggle-btn">
+                    <p>	&#9776;</p>
+                </div>
+            </div>
+            <div class="dropdownmenu">
+                <ul class="links">
+                    <li><a href="Mainpage.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="purchase.html">Purchase</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="signin.html" class="actionbutton">Login</a></li>
+                </ul>    
+            </div>
+        </header>
+        <script>
+            const togglebtn = document.querySelector('.toggle-btn')
+            const togglebtnicon = document.querySelector('.toggle-btn p')
+            const dropdownmenu= document.querySelector('.dropdownmenu')
+            togglebtn.onclick = function(){
+                dropdownmenu.classList.toggle('open')
+            }
+        </script>
+        <div class="aboutu_img">
+            <figure class="student">
+                <img src="css/images/dileesha.jpg" alt="" width="250" height="270">
+                <figcaption>Dileesha Gamage <br>Student 1</figcaption>
+            </figure>
+            <figure class="student">
+                <img src="css/images/dileepa.jpg" alt="" width="250" height="270">
+                <figcaption>Dileepa Malshan<br>Student 2</figcaption>
+            </figure>
+            <figure class="student">
+                <img src="css/images/tharupa.jpg" alt="" width="250" height="270">
+                <figcaption>Hasini Tharupa<br>Student 4</figcaption>
+            </figure>
+        </div>
+        <footer>Editor:- <a href="dileepa.html">Dileepa Malshan</a></footer>
+    </body>
+</html>

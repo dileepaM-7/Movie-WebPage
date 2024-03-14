@@ -1,0 +1,60 @@
+*{
+    font-family: Lato, sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+body{
+    background-color: black;
+    background:rgba(0, 0, 0, 0.808)url('images/background2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center ;
+    height: 500px;
+    width: auto;
+    background-blend-mode: darken;
+    color: #ffffff;
+    }
+.aboutu_img{
+    padding-top: 7%;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 0.5px;
+    text-align: center;
+    align-items: center;
+    gap: 10%;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+}
+.aboutu_img .student{
+    text-align: center;
+    padding:2rem 2rem;
+    background: #51595d;
+    box-shadow: 1rem 1rem rgba(0,0,0,.1);
+    outline: .1rem solid #ccc;
+    outline-offset: 1.5rem;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.aboutu_img .student:hover{
+    outline: .2rem solid aqua;
+    outline-offset: 0;
+}
+.aboutu_img .student img{
+    height: 20rem;
+}
+.aboutu_img .student img:hover{
+    transform: scale(.9);
+}
+.aboutu_img .student{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color:transparent;
+}
+.aboutu_img .student:hover{
+    color:rgb(0, 0, 0);
+}

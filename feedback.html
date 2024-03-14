@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/feedbaack.css">
+        <title>Feedback</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="aboutus.html"><img src="css/images/PNGimage.png" alt="" height="40" width="150"></a></div>
+                <ul class="links">
+                    <li><a href="Mainpage.html">Home</a></li>
+                    <li><a href="gallery.html"> Movie Gallery</a></li>
+                    <li><a href="purchase.html">Purchase</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li class="active"><a href="feedback.html">Feedback</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+                <a href="signin.html" class="actionbutton">Login</a>
+                <div class="toggle-btn">
+                    <p>	&#9776;</p>
+                </div>
+            </div>
+            <div class="dropdownmenu">
+                <ul class="links">
+                    <li><a href="Mainpage.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="purchase.html">Purchase</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="signin.html" class="actionbutton">Login</a></li>
+                </ul>    
+            </div>
+        </header>
+        <div class="container">
+            <div class="wrapper">
+                <p class="text">How Wolud you rate this website?</p>
+                <div class="emoji">
+                    <div onclick="enlarge(this)">🙁</div>
+                    <div onclick="enlarge(this)">😐</div>
+                    <div onclick="enlarge(this)">🙂</div>
+                    <div onclick="enlarge(this)">😆</div>
+                    <div onclick="enlarge(this)">😍</div>
+                </div>
+            </div>
+            <br>
+            <form action="mailto:dileepa.20221421@iit.ac.lk" method="post"
+            enctype="text/plain" id="my-form">
+                <label  for="name">Name :</label>
+                <input class="name" type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email :</label>
+                <input class="email" type="email" id="email" name="email" required>
+                <br><br>
+                <label for="comment">Comment : </label>
+                <textarea class="textarea" id="comment" name="comment" required
+                placeholder="Enter Your commnet!"></textarea>
+                <br>
+            <div class="select">
+                <select  name="format" id="format" required  >
+                    <option value="" disabled selected>How You complete task today</option>
+                    <option value="phone">phone</option>
+                    <option value="website">website</option>
+                    <option value="webchat">webchat</option>
+                    <option value="socail media">socail media</option>
+                    <option value="Email">Email</option>
+                </select>
+            </div>
+            <br><br>
+            <input class="button" type="submit" value="Submit" onclick="validateForm()">
+            <input class="button" type="reset" value="Reset" >
+            </form>
+            <br>
+            <script src="js/feedback.js"></script>    
+        </div>
+        <footer>Editor:- <a href="dileepa.html">Dileepa Malshan</a></footer>
+    </body>
+</html>
